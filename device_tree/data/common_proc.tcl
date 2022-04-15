@@ -3384,7 +3384,7 @@ proc get_in_connect_ip {ip intfpins} {
 							continue
 					}
 					set master_intf [::hsi::get_intf_pins -of_objects [get_cells -hier $connectip] -filter {TYPE==SLAVE || TYPE ==TARGET}]
-					get_in_connect_ip $connectip $master_intf
+					#get_in_connect_ip $connectip $master_intf
 				}
 			}
 	}
